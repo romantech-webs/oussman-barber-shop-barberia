@@ -1,283 +1,337 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "Oussman Barber Shop | barbería barcelona | La mejor barbería de Barcelona",
+  logo: "/images/logo.png",
+  tagline: "Tu barbería de confianza en el corazón de Barcelona",
+  description: "Oussman Barber Shop es la barbería de referencia en Barcelona con 4.9 estrellas y más de 548 reseñas. Especialistas en cortes masculinos modernos y arreglo de barba profesional, nuestro equipo liderado por Adil y Oussman ofrece un servicio detallista, rápido y con resultados impecables. Ambiente acogedor, atención personalizada y la mejor relación calidad-precio de la ciudad.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#37384f",
+    secondary: "#111118",
+    accent: "#65697f",
+    neutral: "#efeff1"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "674 34 50 26",
+  whatsapp: "+34674345026",
+  whatsappMessage: "Hola, me gustaría pedir cita para peluquería.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "Carrer de Sant Pau, 100, Ciutat Vella, 08001 Barcelona, España",
+    city: "Barcelona",
+    province: "Madrid",
+    postalCode: "08001",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=11591944421078262702&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Oussman%20Barber%20Shop%20%7C%20barber%C3%ADa%20barcelona%20%7C%20La%20mejor%20barber%C3%ADa%20de%20Barcelona%20%4041.3766%2C2.16934&z=16&output=embed",
+  coordinates: {
+    lat: 41.3766,
+    lng: 2.16934
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes - sábado",
+      hours: "10:30–15:00, 16:00–20:30"
+    },
+    {
+      days: "domingo",
+      hours: "12:30–20:00"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 4.9,
+    count: 548,
+    url: "https://maps.google.com/?cid=11591944421078262702&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     featured: [
       {
-        author: "Eva León",
+        author: "Vitor Diorranes",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "Adil es un profesional excelente. Muy amable, atento desde el primer momento y con una energía súper positiva que te hace sentir cómodo enseguida.\nEs muy detallista en cada paso del corte, se nota que le importa el resultado final y la satisfacción del cliente.\nEscucha lo que pides, aporta su criterio profesional y cuida cada acabado.\n\nSin duda, una experiencia muy recomendable. Volveré.",
+        date: "Hace 2 meses"
       },
       {
-        author: "Javier Padilla",
+        author: "Adam Green Rodriguez",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Buena experiencia. Un corte bueno y rápido. Exactamente lo que  buscaba! No sé su nombre pero creo que erá un chico argentino (por el acento).\nCalidad/precio super bien. Lo recomiendo! Seguro volveré!\nGracias .",
+        date: "Hace 2 meses"
       },
       {
-        author: "Melanie Ponce",
+        author: "Eric Aguirre",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "Realmente, un excelente servicio. Adil es un gran profesional. Recomiendo al %1000 venir aquí, a todo mundo, a cortarse el pelo y/o arreglar su barba. Me voy muy contento con el resultado 🙌🏻",
+        date: "Hace 1 mes"
       },
       {
-        author: "María Teresa Salguero",
+        author: "Eduard Ledden",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "La experiencia como cliente ha sido excelente. Super puntual, muy amable y cordial.\nMe ha aconsejado sobre el corte de pelo y arreglo de la barba.\n\nEncantado",
+        date: "Hace 4 semanas"
       },
-    ],
+      {
+        author: "Emre Erkaslan",
+        rating: 5,
+        text: "Muchas gracias a Oussman 🙏 no necesito me preocupo sobre nada. El me entiende y hace muy bien corte. Mi cabeza es ‘cómoda’",
+        date: "Hace 1 mes"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "corte-masculino",
+      name: "Corte Masculino Personalizado",
+      description: "Cortes modernos y clásicos adaptados a tu estilo y tipo de cabello. Nuestros barberos escuchan tus preferencias, aportan su criterio profesional y cuidan cada detalle del acabado. Trabajamos con técnicas precisas para resultados impecables que duran.",
+      benefits: [
+        "Asesoramiento profesional personalizado",
+        "Acabados perfectos y detallistas",
+        "Cortes rápidos sin perder calidad"
+      ],
+      icon: "Scissors"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "arreglo-barba",
+      name: "Arreglo y Perfilado de Barba",
+      description: "Servicio especializado de grooming para barba con perfilado preciso, recorte y acabado profesional. Diseñamos la forma que mejor se adapta a tu rostro, cuidando cada línea y contorno. Productos premium para un resultado suave y definido.",
+      benefits: [
+        "Perfilado exacto según tu fisionomía",
+        "Productos de alta calidad para el cuidado",
+        "Consejos para mantenimiento en casa"
+      ],
+      icon: "User"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "corte-barba-combo",
+      name: "Combo Corte + Barba",
+      description: "Nuestro servicio estrella que combina corte de pelo y arreglo de barba en una sola sesión. Experiencia completa de transformación con atención al detalle en cada paso. La mejor relación calidad-precio para tu rutina de grooming mensual.",
+      benefits: [
+        "Servicio completo en una sola visita",
+        "Look totalmente renovado y coordinado",
+        "Ahorro de tiempo y mejor precio"
+      ],
+      icon: "Crown"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "fade-degradado",
+      name: "Fade y Degradados",
+      description: "Técnicas de degradado profesional desde skin fade hasta low fade, adaptadas a las últimas tendencias urbanas. Transiciones suaves y precisas que requieren mano experta. Resultados limpios y modernos que destacan tu personalidad.",
+      benefits: [
+        "Degradados perfectos y simétricos",
+        "Estilos actualizados y trending",
+        "Acabado profesional duradero"
+      ],
+      icon: "Layers"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "afeitado-clasico",
+      name: "Afeitado Clásico con Navaja",
+      description: "Experiencia tradicional de barbería con afeitado a navaja, toallas calientes y productos específicos. Ritual completo que cuida tu piel mientras elimina el vello facial con precisión milimétrica. Momento de relax y cuidado personal premium.",
+      benefits: [
+        "Técnica tradicional de barbería auténtica",
+        "Piel suave e hidratada",
+        "Experiencia relajante única"
+      ],
+      icon: "Sparkles"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "tratamiento-capilar",
+      name: "Tratamientos Capilares",
+      description: "Cuidados específicos para mantener tu cabello sano, fuerte y con brillo. Desde hidratación profunda hasta tratamientos anticaída. Productos profesionales que nutren el cuero cabelludo y fortalecen la fibra capilar.",
+      benefits: [
+        "Cabello más fuerte y saludable",
+        "Prevención de problemas capilares",
+        "Productos de gama profesional"
+      ],
+      icon: "Heart"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "corte-express",
+      name: "Corte Express",
+      description: "Servicio rápido sin cita previa para cuando necesitas un retoque urgente. Cortes eficientes manteniendo nuestra calidad característica. Perfecto para mantenimientos entre visitas o cuando tienes poco tiempo.",
+      benefits: [
+        "Sin necesidad de cita previa",
+        "Servicio rápido y eficiente",
+        "Misma calidad en menos tiempo"
+      ],
+      icon: "Scissors"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "diseno-contornos",
+      name: "Diseño y Contornos",
+      description: "Perfilado y definición de líneas capilares, patillas y contornos de barba con máxima precisión. Detalles que marcan la diferencia en tu look final. Acabados limpios que realzan tus rasgos naturales.",
+      benefits: [
+        "Líneas perfectamente definidas",
+        "Atención extrema al detalle",
+        "Look pulido y profesional"
+      ],
+      icon: "Crown"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Reserva tu Cita",
+      description: "Llámanos al 674 34 50 26 o escríbenos por WhatsApp. También aceptamos visitas sin cita previa según disponibilidad. Horarios flexibles adaptados a tu agenda."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Consulta Personalizada",
+      description: "Tu barbero escucha tus preferencias y analiza tu tipo de cabello y barba. Te asesoramos profesionalmente sobre el corte que mejor se adapta a tu estilo y fisionomía, aportando ideas y recomendaciones expertas."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Transformación con Detalle",
+      description: "Trabajamos con precisión cada paso del corte y arreglo. Técnicas profesionales, herramientas de calidad y atención meticulosa a cada acabado. Energía positiva y ambiente cómodo durante todo el servicio."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Resultado Impecable",
+      description: "Sales con un look renovado que supera tus expectativas. Te damos consejos personalizados para mantener tu corte y barba en casa. Satisfacción garantizada que te hará volver."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "Avalados por 548 Clientes Satisfechos",
+      description: "Nuestra valoración de 4.9 estrellas en Google con más de 548 reseñas reales nos posiciona como una de las barberías mejor valoradas de Barcelona. Clientes que repiten y recomiendan por la calidad constante de nuestro servicio.",
+      icon: "Crown"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Profesionales Expertos y Detallistas",
+      description: "Equipo liderado por barberos como Adil y Oussman, reconocidos por su atención meticulosa, energía positiva y capacidad de entender exactamente lo que cada cliente necesita. Profesionales que cuidan cada acabado como si fuera propio.",
+      icon: "User"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Excelente Relación Calidad-Precio",
+      description: "Servicio premium a precios justos y competitivos. Nuestros clientes destacan constantemente que reciben más de lo que esperaban por su inversión. Calidad profesional sin pagar de más, en el centro de Barcelona.",
+      icon: "Heart"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Ambiente Acogedor y Servicio Rápido",
+      description: "Experiencia cómoda desde el primer momento con trato amable y cordial. Servicios eficientes que respetan tu tiempo sin sacrificar la calidad. Ambiente relajado donde te sientes como en casa mientras te transformamos.",
+      icon: "Sparkles"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Adil",
+      role: "Barbero Profesional",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
+      bio: "Estilistas apasionados por la belleza y las tendencias. En Oussman Barber Shop | barbería barcelona | La mejor barbería de Barcelona nos dedicamos a que cada cliente salga con el look perfecto y la confianza renovada."
     },
+    {
+      name: "Oussman",
+      role: "Barbero Fundador",
+      image: "/images/team/placeholder.jpg",
+      bio: "Estilistas apasionados por la belleza y las tendencias. En Oussman Barber Shop | barbería barcelona | La mejor barbería de Barcelona nos dedicamos a que cada cliente salga con el look perfecto y la confianza renovada."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/gallery/1.webp",
+      alt: "Oussman Barber Shop | barbería barcelona | La mejor barbería de Barcelona - Imagen 1"
+    },
+    {
+      src: "/images/gallery/2.webp",
+      alt: "Oussman Barber Shop | barbería barcelona | La mejor barbería de Barcelona - Imagen 2"
+    },
+    {
+      src: "/images/gallery/3.webp",
+      alt: "Oussman Barber Shop | barbería barcelona | La mejor barbería de Barcelona - Imagen 3"
+    },
+    {
+      src: "/images/gallery/4.webp",
+      alt: "Oussman Barber Shop | barbería barcelona | La mejor barbería de Barcelona - Imagen 4"
+    },
+    {
+      src: "/images/hero.webp",
+      alt: "Oussman Barber Shop | barbería barcelona | La mejor barbería de Barcelona - Imagen 5"
+    },
+    {
+      src: "/images/gallery/6.webp",
+      alt: "Oussman Barber Shop | barbería barcelona | La mejor barbería de Barcelona - Imagen 6"
+    },
+    {
+      src: "/images/gallery/7.webp",
+      alt: "Oussman Barber Shop | barbería barcelona | La mejor barbería de Barcelona - Imagen 7"
+    },
+    {
+      src: "/images/gallery/8.webp",
+      alt: "Oussman Barber Shop | barbería barcelona | La mejor barbería de Barcelona - Imagen 8"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Necesito cita previa en Oussman Barber Shop?",
+      answer: "Recomendamos reservar cita para asegurar tu horario preferido, especialmente en fines de semana. Puedes llamarnos al 674 34 50 26 o escribirnos por WhatsApp. También aceptamos clientes sin cita según disponibilidad, perfecta para servicios express o retoques rápidos."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Cuánto tiempo dura un servicio completo de corte y barba?",
+      answer: "Un servicio completo de corte más arreglo de barba dura aproximadamente 45-60 minutos. Nuestros barberos trabajan con eficiencia sin sacrificar calidad ni atención al detalle. Si necesitas un servicio más rápido, nuestro corte express toma alrededor de 20-30 minutos manteniendo los mismos estándares de calidad."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Qué diferencia a Oussman Barber Shop de otras barberías?",
+      answer: "Nuestra valoración de 4.9 estrellas con más de 548 reseñas en Google habla por sí sola. Los clientes destacan nuestra atención al detalle, el trato profesional y cercano, y la excelente relación calidad-precio. Nuestro equipo, liderado por profesionales como Adil y Oussman, se caracteriza por escuchar al cliente, aportar criterio experto y cuidar cada acabado hasta la perfección."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Qué productos utilizan en los servicios?",
+      answer: "Trabajamos exclusivamente con productos profesionales de alta gama específicos para barbería masculina. Utilizamos herramientas de precisión perfectamente mantenidas y productos de cuidado que respetan tu piel y cabello. También te recomendamos productos para el mantenimiento en casa según tus necesidades específicas."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Hacen diseños y estilos modernos o solo cortes clásicos?",
+      answer: "En Oussman Barber Shop dominamos tanto estilos clásicos como las últimas tendencias urbanas. Desde fades y degradados modernos hasta cortes tradicionales de barbería. Nuestros profesionales se mantienen actualizados con las tendencias y técnicas más recientes para ofrecerte exactamente el look que buscas."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Cuál es el precio aproximado de los servicios?",
+      answer: "Ofrecemos la mejor relación calidad-precio de Barcelona, como destacan nuestros clientes en sus reseñas. Los precios varían según el servicio: cortes desde precios muy competitivos, con descuentos en combos de corte más barba. Llámanos al 674 34 50 26 para información detallada de tarifas y promociones vigentes."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Atienden a todo tipo de cabello y barba?",
+      answer: "Absolutamente. Nuestro equipo tiene experiencia con todo tipo de texturas de cabello, desde liso hasta rizado y afro. También trabajamos con todo tipo de barbas, desde recortes de mantenimiento hasta diseños y perfilados complejos. Cada cliente recibe un servicio personalizado adaptado a sus características específicas."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Dónde está ubicada la barbería exactamente?",
+      answer: "Oussman Barber Shop está ubicada en el corazón de Barcelona, en el código postal 08001, zona céntrica y de fácil acceso. Para indicaciones específicas o cualquier duda sobre cómo llegar, no dudes en contactarnos al 674 34 50 26. Te esperamos en un ambiente acogedor y profesional."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | Oussman Barber Shop | barbería barcelona | La mejor barbería de Barcelona",
+    defaultTitle: "Oussman Barber Shop | Barbería Barcelona 08001 ⭐ 4.9",
+    defaultDescription: "Barbería profesional en Barcelona 08001 ⭐ 4.9 con 548 reseñas. Cortes masculinos, arreglo de barba y fade. Equipo experto liderado por Adil y Oussman. ☎️ 674 34 50 26",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "barbería Barcelona",
+      "Oussman Barber Shop",
+      "barbería 08001 Barcelona",
+      "corte de pelo masculino Barcelona",
+      "arreglo de barba Barcelona",
+      "barbería profesional Barcelona centro",
+      "fade Barcelona",
+      "barbero Barcelona",
+      "mejor barbería Barcelona",
+      "corte y barba Barcelona",
+      "barbería cerca de mí Barcelona",
+      "peluquería masculina Barcelona"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "Oussman Barber Shop | barbería barcelona | La mejor barbería de Barcelona",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "Carrer de Sant Pau, 100, Ciutat Vella, 08001 Barcelona, España, Barcelona, Madrid"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Centro de",
+    "Peluquería",
+    "en Barcelona"
+  ],
+  heroDescription: "En Oussman Barber Shop transformamos tu look con precisión y estilo. Cortes masculinos a medida, arreglo de barba impecable y un trato profesional que te hace sentir como en casa. Más de 548 clientes nos avalan con 4.9 estrellas.",
+  specialty: "Barbería Masculina Premium",
+  ctaLabel: "Tu Nuevo Look",
+  ctaHeadline: "¿Listo para tu mejor versión?",
+  ctaDescription: "Reserva tu cita en Oussman Barber Shop y descubre por qué somos la barbería mejor valorada de Barcelona. Atención personalizada, resultados garantizados.",
+  statsLabel: "Clientes",
+  schemaType: "HairSalon",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
     servicesTitle: "Tratamientos especializados",
@@ -300,8 +354,8 @@ export const clinic = {
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
     teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamDescription: "Experiencia y pasión al servicio de tu belleza"
+  }
 }
 
 export type Clinic = typeof clinic
